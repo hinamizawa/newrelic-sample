@@ -3,18 +3,13 @@
             [ring.util.http-response :refer :all]
             [schema.core :as s]
             [aleph.http :as http]
-            [new-reliquary.ring :refer [wrap-route-with-newrelic-transaction]]))
+            [new-reliquary.ring :refer [wrap-newrelic-transaction]]
+            [newrelic-sample.handler.one :refer [roll roll-another]]
+            [newrelic-sample.handler.another :refer [plus echo]]))
 
 (s/defschema Result
   {:total s/Int
    :roll  [s/Int]})
-
-(s/defschema Pizza
-  {:name                         s/Str
-   (s/optional-key :description) s/Str
-   :size                         (s/enum :L :M :S)
-   :origin                       {:country (s/enum :FI :PO)
-                                  :city    s/Str}})
 
 (defn roll-dice [n s]
   (let [roll (repeatedly n (fn* [] (inc (rand-int s))))]
@@ -25,60 +20,29 @@
   {:num   s/Int
    :sides s/Int})
 
-(defroutes partial-routes
-  (GET "/roll/:n/:s" []
-    :path-params [n :- s/Int
-                  s :- s/Int]
-    :return Result
-    :summary "Rolls :n dice of sides :s"
-    :middleware [wrap-route-with-newrelic-transaction]
-    (ok (roll-dice n s))))
-
 (def one
   (api
-    {:swagger
-     {:ui   "/"
-      :spec "/swagger.json"
-      :data {:info {:title       "My-api"
-                    :description "Compojure Api example"}
-             :tags [{:name "api", :description "some apis"}]}}}
+    {:swagger    {:ui   "/"
+                  :spec "/swagger.json"
+                  :data {:info {:title       "My-api"
+                                :description "Compojure Api example"}
+                         :tags [{:name "api", :description "some apis"}]}}
+     :middleware [wrap-newrelic-transaction]}
 
     (context "/api" []
       :tags ["api"]
 
-      partial-routes
-
-      (POST "/roll" []
-        :body [{:keys [num sides]} Request]
-        :return Result
-        :summary "Given a correct request body with keys :num and :sides, returns result of roll"
-        :middleware [wrap-route-with-newrelic-transaction]
-        (ok (roll-dice num sides))))
+      roll
+      roll-another)
 
     (context "/another" []
       :tags ["another"]
 
-      (GET "/plus" []
-        :return {:result Long}
-        :query-params [x :- Long, y :- Long]
-        :summary "adds two numbers together"
-        (ok {:result (+ x y)}))
-
-      (POST "/echo" []
-        :return Pizza
-        :body [pizza Pizza]
-        :summary "echoes a Pizza"
-        (ok pizza)))))
+      plus
+      echo)))
 
 (def two
   (api
-    {:swagger
-     {:ui   "/"
-      :spec "/swagger2.json"
-      :data {:info {:title       "My-api2"
-                    :description "Compojure Api2 example"}
-             :tags [{:name "api2", :description "some apis2"}]}}}
-
     (context "/api2" []
       :tags ["api2"]
 

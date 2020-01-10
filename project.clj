@@ -4,7 +4,7 @@
                  [org.clojure/core.async "0.6.532"]
                  [metosin/compojure-api "2.0.0-alpha30"]
                  [com.newrelic.agent.java/newrelic-api "5.9.0"]
-                 [hinamizawa/new-reliquary "0.1.3"]]
+                 [hinamizawa/new-reliquary "0.1.4"]]
   :ring {:handler newrelic-sample.handler/app}
   :uberjar-name "server.jar"
   :alias {"test" ^{:doc "call midje test"} ["midje"]}
