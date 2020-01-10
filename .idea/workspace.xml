@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bc84fe6d-20c7-4490-af71-c8c570c66d02" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Clojure Namespace" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1W6KUhl2bJSMDrcwYsAItdF5mKi" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="cursive.last.file.extension./Users/jylu/Documents/my-api/src" value="clj" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
+      <setting name="replType" value="NREPL" />
+      <setting name="execution" value="LEININGEN" />
+      <module name="" />
+      <setting name="jvmArgs" value="" />
+      <setting name="parameters" value="" />
+      <setting name="workingDir" value="" />
+      <setting name="profiles" value="" />
+      <setting name="aliases" value="" />
+      <setting name="fixLineNumbers" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="ClojureREPL" factoryName="Remote" activateToolWindowBeforeRun="false">
+      <setting name="host" value="" />
+      <setting name="port" value="0" />
+      <setting name="replType" value="SOCKET" />
+      <setting name="configType" value="SPECIFY" />
+      <setting name="fixLineNumbers" value="false" />
+      <module name="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="my-api.handler" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
+      <module name="newrelic-sample" />
+      <setting name="path" value="$PROJECT_DIR$/src/my_api/handler.clj" />
+      <setting name="namespace" value="" />
+      <setting name="execution" value="INTELLIJ" />
+      <setting name="profiles" value="" />
+      <setting name="aliases" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="$PROJECT_DIR$/src/my_api" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Clojure Application.my-api.handler" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SQLPlugin.ProjectConfiguration">
+    <queries />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bc84fe6d-20c7-4490-af71-c8c570c66d02" name="Default Changelist" comment="" />
+      <created>1578464621680</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578464621680</updated>
+      <workItem from="1578464626596" duration="7060000" />
+      <workItem from="1578476600877" duration="7147000" />
+      <workItem from="1578549447462" duration="1729000" />
+      <workItem from="1578624207129" duration="2510000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-654" y="-1417" key="FileDocumentManager.FileCacheConflict" timestamp="1578475470083">
+      <screen x="-746" y="-1417" width="2560" height="1417" />
+    </state>
+    <state x="-654" y="-1417" key="FileDocumentManager.FileCacheConflict/0.23.1440.797/-746.-1417.2560.1417@-746.-1417.2560.1417" timestamp="1578475470083" />
+    <state width="2119" height="366" key="GridCell.Tab.0.bottom" timestamp="1578475492515">
+      <screen x="-746" y="-1417" width="2560" height="1417" />
+    </state>
+    <state width="2119" height="366" key="GridCell.Tab.0.bottom/0.23.1440.797/-746.-1417.2560.1417@-746.-1417.2560.1417" timestamp="1578475492515" />
+    <state width="2119" height="366" key="GridCell.Tab.0.center" timestamp="1578475492514">
+      <screen x="-746" y="-1417" width="2560" height="1417" />
+    </state>
+    <state width="2119" height="366" key="GridCell.Tab.0.center/0.23.1440.797/-746.-1417.2560.1417@-746.-1417.2560.1417" timestamp="1578475492514" />
+    <state width="2119" height="366" key="GridCell.Tab.0.left" timestamp="1578475492513">
+      <screen x="-746" y="-1417" width="2560" height="1417" />
+    </state>
+    <state width="2119" height="366" key="GridCell.Tab.0.left/0.23.1440.797/-746.-1417.2560.1417@-746.-1417.2560.1417" timestamp="1578475492513" />
+    <state width="2119" height="366" key="GridCell.Tab.0.right" timestamp="1578475492514">
+      <screen x="-746" y="-1417" width="2560" height="1417" />
+    </state>
+    <state width="2119" height="366" key="GridCell.Tab.0.right/0.23.1440.797/-746.-1417.2560.1417@-746.-1417.2560.1417" timestamp="1578475492514" />
+    <state x="-127" y="-1047" key="IDE.errors.dialog" timestamp="1578478683342">
+      <screen x="-746" y="-1417" width="2560" height="1417" />
+    </state>
+    <state x="-127" y="-1047" key="IDE.errors.dialog/0.23.1440.797/-746.-1417.2560.1417@-746.-1417.2560.1417" timestamp="1578478683342" />
+    <state x="17" y="-1186" key="SettingsEditor" timestamp="1578475273564">
+      <screen x="-746" y="-1417" width="2560" height="1417" />
+    </state>
+    <state x="17" y="-1186" key="SettingsEditor/0.23.1440.797/-746.-1417.2560.1417@-746.-1417.2560.1417" timestamp="1578475273564" />
+  </component>
+</project>
