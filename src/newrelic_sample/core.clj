@@ -1,6 +1,6 @@
 (ns newrelic-sample.core
   (:require [aleph.http :as http]
-            [my-api.handler :refer [app]]
+            [newrelic-sample.handler :refer [app]]
             [clojure.core.async :refer [go-loop <! timeout]])
   (:import com.newrelic.api.agent.Trace))
 

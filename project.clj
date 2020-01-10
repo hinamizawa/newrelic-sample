@@ -5,7 +5,7 @@
                  [metosin/compojure-api "2.0.0-alpha30"]
                  [com.newrelic.agent.java/newrelic-api "5.9.0"]
                  [hinamizawa/new-reliquary "0.1.3"]]
-  :ring {:handler my-api.handler/app}
+  :ring {:handler newrelic-sample.handler/app}
   :uberjar-name "server.jar"
   :alias {"test" ^{:doc "call midje test"} ["midje"]}
   :java-agents [[com.newrelic.agent.java/newrelic-agent "5.9.0"]]
