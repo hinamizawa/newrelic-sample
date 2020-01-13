@@ -3,7 +3,6 @@
             [ring.util.http-response :refer :all]
             [schema.core :as s]
             [aleph.http :as http]
-            [new-reliquary.ring :refer [wrap-newrelic-transaction]]
             [newrelic-sample.handler.one :refer [roll roll-another]]
             [newrelic-sample.handler.another :refer [plus echo]]))
 
@@ -26,8 +25,7 @@
                   :spec "/swagger.json"
                   :data {:info {:title       "My-api"
                                 :description "Compojure Api example"}
-                         :tags [{:name "api", :description "some apis"}]}}
-     :middleware [wrap-newrelic-transaction]}
+                         :tags [{:name "api", :description "some apis"}]}}}
 
     (context "/api" []
       :tags ["api"]
