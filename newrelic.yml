@@ -29,7 +29,7 @@ common: &default_settings
   # app_name: My Application;My Application 2
   # This setting is required. Up to 3 different application names can be specified.
   # The first application name must be unique.
-  app_name: Sample App
+  app_name: Contract Api Test
 
   # To enable high security, set this property to true. When in high
   # security mode, the agent will use SSL and obfuscated SQL. Additionally,
@@ -293,15 +293,15 @@ common: &default_settings
 
 development:
   <<: *default_settings
-  app_name: Sample App (Development)
+  app_name: Contract Api Test (Development)
 
 test:
   <<: *default_settings
-  app_name: Sample App (Test)
+  app_name: Contract Api Test (Test)
 
 production:
   <<: *default_settings
 
 staging:
   <<: *default_settings
-  app_name: Sample App (Staging)
+  app_name: Contract Api Test (Staging)

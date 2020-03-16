@@ -4,7 +4,7 @@
             [schema.core :as s]
             [aleph.http :as http]
             [newrelic-sample.handler.one :refer [roll roll-another]]
-            [newrelic-sample.handler.another :refer [plus echo]]))
+            [newrelic-sample.handler.another :refer [plus echo test-api]]))
 
 (s/defschema Result
   {:total s/Int
@@ -37,7 +37,8 @@
       :tags ["another"]
 
       plus
-      echo)))
+      echo
+      test-api)))
 
 (def two
   (api

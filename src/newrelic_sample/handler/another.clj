@@ -19,6 +19,20 @@
     :summary "adds two numbers together"
     (ok {:result (+ x y)})))
 
+(defroutes test-api
+  (GET "/test" []
+    :return {:result Long}
+    :query-params [num :- Long]
+    :summary "test-api"
+    (ok {:result (cond
+                   (zero? num) (/ 1 0)
+                   (= 1 num) (throw (Exception. "my exception message"))
+                   (= 2 num) (throw
+                               (ex-info "The ice cream has melted!"
+                                        {:causes              #{:fridge-door-open :dangerously-high-temperature}
+                                         :current-temperature {:value 25 :unit :celsius}}))
+                   :else 42)})))
+
 (defroutes echo
   (POST "/echo" []
     :return Pizza
